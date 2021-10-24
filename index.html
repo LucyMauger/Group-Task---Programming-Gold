@@ -1,58 +1,164 @@
-# Group-Task---Programming-Gold
-A shared repository for our group task for Programming Gold.
-Code so far:
-
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <title>Climate Change</title>
     </head>
     <body>
-        <h1> CLIMATE CHANGE </h1>
-        <img src ="Climate Change.jpg" alt = "Climate Change" width="500" height="400">
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+            <div class="container">
+                <a href="#" class="navbar-brand">Climate Change</a>
 
-        <h2> What is Climate Change?</h2>
-        <p> Climate change is a large scale issue having many visible effects on our society today. It describes a change in the average conditions, such as temperature and rainfall over a long period of time. Some examples include:
-            <ul>
-                <li> Pollution</li>
-                <li> Rising sea levels</li>
-                <li> Shrinking mountain glaciers</li>
-                <li> More frequent and more intense drought</li>
-            </ul>
+                <!-- Collapse Icon -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h2> What causes Climate Change?</h2>
-        <p> Many factors contribute to the climate of the Earth, but scientists agree that the Earth has been getting warmer in the past 50 to 100 years.
-            A big part of this has been human activities:
-            Examples of human activities include:
-            <li> Burning fuel to power factories, cars and buses</li>
-            <li> Cutting down forests</li>
-            <li> Farming livestock</li>
-        </p>
+                <!-- Collapse Options -->  
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#what" class="nav-link">What is it?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#causes" class="nav-link">Causes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#impacts" class="nav-link">Impacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help" class="nav-link">What can you do?</a>
+                        </li>
+                    </ul>
+                </div>
 
-        <h2> What could the impacts of climate change be in the long-term?</h2>
-        <p> 
-        <ul>
-            <li> Decrease in sea ice levels </li>
-            <li> An increase in permafrost thawing</li>
-            <li> Changes in precipitation patterns </li>
-            <li> Continued rise in temperatures which are not uniform or smooth</li>
-        </ul>
-        </p>
+            </div>
+        </nav>
 
-        <h2> What can individuals do?</h2>
-        <p>
-        <ul>
-            <li> Eating less meat and dairy</li>
-            <li> Cut back on flying</li>
-            <li> Don't use the car for short journeys</li>
-            <li> Reduce energy use e.g. turning off lights when you don't need them</li>
-        </ul> </p>
+        <!-- WEBSITE HEADER -->
+        <section class="header-image text-light p-5 text-center">
+            <div class="container header-size header-text">
+                <div>
+                    <h1>CLIMATE CHANGE</h1>
+                    <p class="lead">
+                        Find out more about <span class="text-info">climate change</span>, its <span class="text-info">causes</span>, <span class="text-info">impacts</span>, and what you can do to <span class="text-info">help</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 1 - WHAT IS CLIMATE CHANGE? -->
+        <section id="what" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                        <div class="col-md">
+                            <img src="https://images.unsplash.com/photo-1606994868513-d480e1a1cab0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md p-5">
+                            <h2>What is Climate Change?</h2>
+                            <p>Climate change is a large scale issue having many visible effects on our society today. It describes <span class="text-info">a change in the average conditions</span>, such as temperature and rainfall over a long period of time. Some examples include:</p>
+                            <p>
+                                <ul>
+                                    <li> Pollution</li>
+                                    <li> Rising sea levels</li>
+                                    <li> Shrinking mountain glaciers</li>
+                                    <li> More frequent and more intense drought</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Back to Top</a>    
+                        </div>
+                </div>
+            </div>
+        </section>
 
-            A link to more information on climate change can be found here: <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiN97jwpsfzAhW7gf0HHQoFAbsQFnoECAYQAw&url=https%3A%2F%2Fwww.worldwildlife.org%2Fthreats%2Feffects-of-climate-change&usg=AOvVaw28ElWbNxEC8ZSb5zQtshEA">Threats of Climate Change To Society</a>
-        </p>
+        <!-- SECTION 2 - WHAT CAUSES CLIMATE CHANGE? -->
+        <section id="causes" class="p-5">
+            <div class="container bg-dark text-light">
+                <div class="row align-items-center justify-content-between">
+                        <div class="col-md p-5">
+                            <h2>What Causes Climate Change?</h2>
+                            <p>Many factors contribute to the climate of the Earth, but scientists agree that the Earth has been getting warmer in the past <span class="text-info">50 to 100 years</span>.
+                                A big part of this has been human activities:</p>
+                            <p>Examples of human activities include:
+                                <li> Burning fuel to power factories, cars and buses</li>
+                                <li> Cutting down forests</li>
+                                <li> Farming livestock</li>
+                            </p>
+                            <a href="#" class="btn btn-outline-light btn-sm">Back to Top</a>  
+                        </div>
+                        <div class="col-md">
+                            <img src="https://images.unsplash.com/photo-1443188987226-256ecbeda3cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="">
+                        </div>
+                </div>
+            </div>
+        </section>
 
-        <p> Rushil Shah, Lucy Mauger</p>
+        <!-- SECTION 3 - WHAT ARE THE LONG-TERM IMPACTS? -->
+        <section id="impacts" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                        <div class="col-md">
+                            <img src="https://images.unsplash.com/photo-1465917566611-efba2904dd8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1476&q=80" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md p-5">
+                            <h2>What Could the Impacts of Climate Change be in the Long-Term?</h2>
+                            <p>
+                                <ul>
+                                    <li> Decrease in sea ice levels </li>
+                                    <li> An increase in permafrost thawing</li>
+                                    <li> Changes in precipitation patterns </li>
+                                    <li> Continued rise in temperatures which are not uniform or smooth</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Back to Top</a>    
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4 - WHAT CAN INDIVIDUALS DO? -->
+        <section id="help" class="p-5">
+            <div class="container bg-dark text-light">
+                <div class="row align-items-center justify-content-between">
+                        <div class="col-md p-5">
+                            <h2>What Can Individuals Do?</h2>
+                            <p>
+                                <ul>
+                                    <li> Eating less meat and dairy</li>
+                                    <li> Cut back on flying</li>
+                                    <li> Don't use the car for short journeys</li>
+                                    <li> Reduce energy use e.g. turning off lights when you don't need them</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-outline-light btn-sm">Back to Top</a>    
+                        </div>
+                        <div class="col-md">
+                            <img src="https://images.unsplash.com/photo-1569163139394-de4e5f43e5ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5 - MORE INFO -->
+        <section id="what" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between colour">
+                    <h4>Click below for more information:</h3>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiN97jwpsfzAhW7gf0HHQoFAbsQFnoECAYQAw&url=https%3A%2F%2Fwww.worldwildlife.org%2Fthreats%2Feffects-of-climate-change&usg=AOvVaw28ElWbNxEC8ZSb5zQtshEA" class="btn btn-dark">More Information</a>    
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="p-5 bg-dark text-light text-center">
+            <div class="container">
+                <p> Created by Rushil Shah and Lucy Mauger</p> 
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
     </body>
 </html>
